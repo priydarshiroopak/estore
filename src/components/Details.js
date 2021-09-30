@@ -43,7 +43,7 @@ export default class Details extends Component {
                   <p className="">{info}</p>
                   {/* buttons */}
                   <div >
-                    <Link to="/">
+                    <Link to={process.env.PUBLIC_URL + "/"}>
                       <ButtonContainer>back to products</ButtonContainer>
                     </Link>
                     <ButtonContainer

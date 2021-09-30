@@ -19,7 +19,7 @@ export default class Dialogue extends Component {
                       <img src={img} className="" alt={title} />
                       <h5>{title}<br/><br/>price : ${price}</h5>
                       <div className="buttons">
-                        <Link to="/">
+                        <Link to={process.env.PUBLIC_URL + "/"}>
                           <ButtonContainer
                             onClick={() => {
                               closeDialogue();
@@ -28,7 +28,7 @@ export default class Dialogue extends Component {
                             Continue Shopping
                           </ButtonContainer>
                         </Link>
-                        <Link to="/cart">
+                        <Link to={process.env.PUBLIC_URL + "/cart"}>
                           <ButtonContainer
                             onClick={() => {
                               closeDialogue();

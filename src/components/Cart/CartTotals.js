@@ -16,7 +16,7 @@ export default class CartTotals extends Component {
         {!emptyCart && (
           <div className="container">
               <div className="cart-total">
-                <Link to="/">
+                <Link to={process.env.PUBLIC_URL + "/"}>
                   <ButtonContainer
                     onClick={() => {
                       clearCart();

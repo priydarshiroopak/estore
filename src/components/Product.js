@@ -15,7 +15,7 @@ export default class Product extends Component {
         <ProductConsumer>
           {value => {
             return (
-            <Link to="/details" className = "tile product-tile" style={{backgroundColor: `${bgColor}`}}>
+            <Link to={process.env.PUBLIC_URL + "/details"} className = "tile product-tile" style={{backgroundColor: `${bgColor}`}}>
               <div className="tile-bg" style={{backgroundImage:`url("${img}")`}} onClick={() => value.handleDetail(id)}>
                 <div className="tile-content">
                   <ButtonContainer className="" disabled={inCart}
